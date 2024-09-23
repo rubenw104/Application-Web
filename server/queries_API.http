@@ -1,0 +1,41 @@
+GET http://localhost:3001/api/posti HTTP/1.1
+###
+PUT http://localhost:3001/api/posti/1
+Content-Type: application/json
+
+{
+    "F":1,
+    "P":"A",
+    "Aereo": "locale",
+    "Occupato": 0,
+    "idUtente": 3
+}
+###
+PUT http://localhost:3001/api/posti HTTP/1.1
+Content-Type: application/json
+
+[    {
+      "id": 1,
+      "F": 1,
+      "P": "A",
+      "Aereo": "locale",
+      "Occupato": 0,
+      "idUtente": 3
+    },
+    {
+      "id": 2,
+      "F": 1,
+      "P": "B",
+      "Aereo": "locale",
+      "Occupato": 0,
+      "idUtente": 3
+    },
+    {
+      "id": 3,
+      "F": 1,
+      "P": "C",
+      "Aereo": "locale",
+      "Occupato": 0,
+      "idUtente": 3
+    }
+] 
